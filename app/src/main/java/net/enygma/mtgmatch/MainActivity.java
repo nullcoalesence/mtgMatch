@@ -10,4 +10,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
+    //We'll want to show recent match information
+    //This could eventually save to the 'net, and show other's games
+
+    //We could eventually have a future to do list of matches: "Destroy Riley w/Reaper King"... for example.
 }

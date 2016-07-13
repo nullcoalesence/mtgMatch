@@ -10,4 +10,7 @@ public class AddOpponent extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_opponent);
     }
+
+    //Use the form data to create a new Player object, that is not the app-Player
+
 }
