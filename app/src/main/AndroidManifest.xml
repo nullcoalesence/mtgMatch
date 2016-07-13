@@ -15,6 +15,12 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".AddDeck">
+        </activity>
+        <activity android:name=".AddOpponent">
+        </activity>
+        <activity android:name=".FightMatch">
+        </activity>
     </application>
 
 </manifest>

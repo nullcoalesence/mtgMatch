@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="net.enygma.mtgmatch.AddDeck">
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New AutoCompleteTextView"
+        android:id="@+id/autocompPlayer"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <ExpandableListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/expandDeckFormat"
+        android:headerDividersEnabled="false"
+        android:fastScrollAlwaysVisible="false"
+        android:layout_above="@+id/checkWhite"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/autocompPlayer"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CMDR"
+        android:id="@+id/checkCommander"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Standard"
+        android:id="@+id/checkStandard"
+        android:layout_alignTop="@+id/checkCommander"
+        android:layout_toRightOf="@+id/checkCommander"
+        android:layout_toEndOf="@+id/checkCommander"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modern"
+        android:id="@+id/checkModern"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/checkStandard"
+        android:layout_toEndOf="@+id/checkStandard"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Other"
+        android:id="@+id/checkOther"
+        android:layout_alignBottom="@+id/checkModern"
+        android:layout_toRightOf="@+id/checkModern"
+        android:layout_toEndOf="@+id/checkModern"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="W"
+        android:id="@+id/checkWhite"
+        android:layout_above="@+id/checkCommander"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="37dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bu"
+        android:id="@+id/checkBlue"
+        android:layout_alignBottom="@+id/checkWhite"
+        android:layout_toRightOf="@+id/checkWhite"
+        android:layout_toEndOf="@+id/checkWhite"
+        android:singleLine="true"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="G"
+        android:id="@+id/checkGreen"
+        android:singleLine="true"
+        android:layout_alignTop="@+id/checkBlue"
+        android:layout_toRightOf="@+id/checkBlue"
+        android:layout_toEndOf="@+id/checkBlue"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bk"
+        android:id="@+id/checkBlack"
+        android:singleLine="true"
+        android:layout_alignTop="@+id/checkGreen"
+        android:layout_toRightOf="@+id/checkGreen"
+        android:layout_toEndOf="@+id/checkGreen"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R"
+        android:id="@+id/checkRed"
+        android:singleLine="false"
+        android:layout_alignBottom="@+id/checkBlack"
+        android:layout_toRightOf="@+id/checkBlack"
+        android:layout_toEndOf="@+id/checkBlack"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:id="@+id/checkColorless"
+        android:singleLine="false"
+        android:layout_alignBottom="@+id/checkRed"
+        android:layout_toRightOf="@+id/checkRed"
+        android:layout_toEndOf="@+id/checkRed"/>
+
+</RelativeLayout>
