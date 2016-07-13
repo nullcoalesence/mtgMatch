@@ -14,5 +14,6 @@ public class FightMatch extends AppCompatActivity {
     //Save the incremental updates to the 'match' as we go
 
     //Save the final data on the match, and we should update all Player's history?
+    //Perhaps 'commentator' notes: 'He stole her Reaper King, and that sealed his fate.'
 
 }

@@ -8,6 +8,7 @@ public class Player {
     private String mName;
     private int mAge;
     private int mDecklistID;
+    //maybe have app-owner notes on the player: "Likes lock decks" or "STOLE MY FREAKIN REAPER KING"
 
     public String getName() {
         return mName;

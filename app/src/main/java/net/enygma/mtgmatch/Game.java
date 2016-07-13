@@ -13,7 +13,7 @@ public class Game {
     What: which decks being piloted by which players
     Where: location of game
     When: time of match
-    Why: meta-info of players, DON'T STEAL MY REAPER KING RILEY!
+    Why: meta-info of players, or say, "Get revenge on Riley for having stolen Reaper King."
      */
 
     public String getPlayerList() {

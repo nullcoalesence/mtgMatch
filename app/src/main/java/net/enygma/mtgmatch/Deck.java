@@ -9,7 +9,7 @@ public class Deck {
     private String mColorIdentity;
     private String mPlayType;
     private String mDetails;
-
+    //maybe a "weakness" attribute, like "Doesn't work w/o its commander (R.K.), no utility"
 
     //We need to save this data too
 
